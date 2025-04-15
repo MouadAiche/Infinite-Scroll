@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border: 1px solid #000;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.wrapper-1, .wrapper-2{
+    border: 1px solid red;
+    height: 100px;
+    width: 90%;
+    margin: 0px 200px;
+    position: relative;
+    overflow: hidden;
+}
+.Item{
+    height: 100px;
+    width: 200px;
+    background-color: red;
+    border-radius: 10px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation: scrollLeft 30s linear infinite;
+}
+@keyframes scrollLeft {
+    to{
+        left: -200px;
+    }
+}
+.Item1{
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+.Item2{
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+.Item3{
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+.Item4{
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+.Item5{
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+.Item6{
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+.Item7{
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+.Item8{
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
